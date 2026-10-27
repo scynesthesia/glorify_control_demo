@@ -4,7 +4,7 @@ Glorify Control monitors a Linux VPS with a Python agent and an AWS serverless b
 
 ### Live Demo
 
-[![Glorify Control — Live Demo](docs/images/dashboard.png)](https://scynesthesia.github.io/glorify_control_demo/))
+[![Glorify Control — Live Demo](docs/images/dashboard.png)](https://scynesthesia.github.io/glorify_control_demo/)
 
 <p align="center">
   <a href="https://scynesthesia.github.io/glorify_control_demo/">
