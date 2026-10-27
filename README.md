@@ -32,6 +32,26 @@ The dashboard brings these flows together through metrics, an event timeline, ra
 | `samples/` | Generated payloads, notification examples and report PDF | `payloads/heartbeat.json` |
 | `scripts/` | Packaging, IaC validation and publication checks | `scan_showcase.py` |
 
+## Authors
+
+Built by [Scynesthesia](https://github.com/scynesthesia) and
+[m4ti11](https://github.com/m4ti11).
+
+| Area | Who |
+|---|---|
+| Event pipeline: SQS queue, Event Processing Lambda, idempotency and alert logic | [Scynesthesia] |
+| Metrics Evaluator, Ingest Metrics, Ingest Database Report | [Scynesthesia] |
+| Healthchecks (Route53) and heartbeat detection | [Scynesthesia] |
+| EventBridge Scheduler, SNS notifications | [Scynesthesia] |
+| Report generation, OpenAI integration, Secrets Manager keys | [Scynesthesia] |
+| Cognito user pool and JWT setup | [Scynesthesia] (integrated into the login by [m4ti11]) |
+| VPS, Python agent, SQLite spool | [m4ti11] |
+| API Gateway, Lambda Authorizer and API-key flow | [m4ti11] |
+| DynamoDB design and Dashboard API | [m4ti11] |
+| Dashboard frontend, CloudFront + OAC + S3 hosting | [m4ti11] |
+| Terraform | Both, each for their own components |
+| Tests, CI, docs | Both |
+
 ## What we wanted to demonstrate
 
 We used API Gateway for ingress and JWT authorization, Lambda for bounded processing, DynamoDB for conditional writes and time-keyed history, SQS for retries and DLQs, S3 for report objects, EventBridge Scheduler for timed jobs, and SNS/SES for notifications. Cognito supplies dashboard identities; Secrets Manager keeps secret values outside Terraform. CloudWatch connects pipeline errors and missing heartbeats to operational alarms.
