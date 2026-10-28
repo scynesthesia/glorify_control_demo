@@ -39,16 +39,16 @@ Built by [Scynesthesia](https://github.com/scynesthesia) and
 
 | Area | Who |
 |---|---|
-| Event pipeline: SQS queue, Event Processing Lambda, idempotency and alert logic | [Scynesthesia] |
-| Metrics Evaluator, Ingest Metrics, Ingest Database Report | [Scynesthesia] |
-| Healthchecks (Route53) and heartbeat detection | [Scynesthesia] |
-| EventBridge Scheduler, SNS notifications | [Scynesthesia] |
-| Report generation, OpenAI integration, Secrets Manager keys | [Scynesthesia] |
-| Cognito user pool and JWT setup | [Scynesthesia] (integrated into the login by [m4ti11]) |
-| VPS, Python agent, SQLite spool | [m4ti11] |
-| API Gateway, Lambda Authorizer and API-key flow | [m4ti11] |
-| DynamoDB design and Dashboard API | [m4ti11] |
-| Dashboard frontend, CloudFront + OAC + S3 hosting | [m4ti11] |
+| Event pipeline: SQS queue, Event Processing Lambda, idempotency and alert logic | Scynesthesia |
+| Metrics Evaluator, Ingest Metrics, Ingest Database Report | Scynesthesia |
+| Healthchecks (Route53) and heartbeat detection | Scynesthesia |
+| EventBridge Scheduler, SNS notifications | Scynesthesia |
+| Report generation, OpenAI integration, Secrets Manager keys | Scynesthesia |
+| Cognito user pool and JWT setup | Scynesthesia (integrated into the login by m4ti11) |
+| VPS, Python agent, SQLite spool | m4ti11 |
+| API Gateway, Lambda Authorizer and API-key flow | m4ti11 |
+| DynamoDB design and Dashboard API | m4ti11 |
+| Dashboard frontend, CloudFront + OAC + S3 hosting | m4ti11 |
 | Terraform | Both, each for their own components |
 | Tests, CI, docs | Both |
 
